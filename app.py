@@ -4,7 +4,7 @@ import os
 from werkzeug.utils import secure_filename
 
 app = Flask(__name__)
-app.config["IMAGE_UPLOADS"] = "C:/Apps/web/landing/uploads"
+app.config["IMAGE_UPLOADS"] = f"{os.getcwd()}/uploads"
 app.config["ALLOWED_IMAGE_EXTENSIONS"] = ".mp4"
 
 def extensions(filename):
@@ -57,11 +57,11 @@ def upload():
                 file.save(os.path.join(app.config["IMAGE_UPLOADS"], filename))
                 if os.path.getsize(os.path.join(app.config["IMAGE_UPLOADS"], filename)) >= 5242880:
                     print("file too big")
-                    os.remove(f"C:/Apps/web/landing/uploads/{file.filename}")
+                    os.remove(f"{os.getcwd()}/uploads/{file.filename}")
                     return redirect(url_for('efs'))
                 
 
-            print(f"\n\nFile: {file}\nPath: C:/Apps/web/landing/uploads/{file.filename}")
+            print(f"\n\nFile: {file}\nPath: {os.getcwd()}/uploads/{file.filename}")
 
             return redirect(url_for('index'))
 
