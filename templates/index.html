@@ -1,0 +1,348 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Sweeple AI</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="{{ url_for('static',filename='assets/images/favicon.png') }}" type="image/png">
+    <link rel="stylesheet" href="{{ url_for('static',filename='assets/css/magnific-popup.css') }}"> 
+    <link rel="stylesheet" href="{{ url_for('static',filename='assets/css/slick.css') }}"> 
+    <link rel="stylesheet" href="{{ url_for('static',filename='assets/css/LineIcons.css') }}"> 
+    <link rel="stylesheet" href="{{ url_for('static',filename='assets/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='assets/css/default.css') }}"> 
+    <link rel="stylesheet" href="{{ url_for('static',filename='assets/css/style.css') }}"> 
+</head>
+
+
+
+<body>
+    <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+    <div class="preloader">
+        <div class="loader">
+            <div class="ytp-spinner">
+                <div class="ytp-spinner-container">
+                    <div class="ytp-spinner-rotator">
+                        <div class="ytp-spinner-left">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                        <div class="ytp-spinner-right">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="navbar-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-expand-lg">
+                       
+                        <a class="navbar-brand" href="#">
+                           <h4>Sweeple</h4>
+                        </a>
+                        
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTwo" aria-controls="navbarTwo" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="toggler-icon"></span>
+                            <span class="toggler-icon"></span>
+                            <span class="toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse sub-menu-bar" id="navbarTwo">
+                            <ul class="navbar-nav m-auto">
+                                <li class="nav-item active"><a class="page-scroll" href="#home">Home</a></li>
+                                <li class="nav-item"><a class="page-scroll" href="#sendclip">Upload</a></li>
+                                <li class="nav-item"><a class="page-scroll" href="#pricing">Pricing</a></li>
+                                <li class="nav-item"><a class="page-scroll" href="#about">FAQ</a></li>
+                            </ul>
+                        </div>
+                    </nav> 
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="home" class="slider_area">
+
+            <div class="carousel-inner">
+                <div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="slider-content">
+                                    <h1 class="title">Sweeple</h1>
+                                    <p class="text">Sweeple is our AI that takes your clip and features it on our YouTube! 🤖<br>Interested? <a>Join our Discord!</a> </p>
+                                    <ul class="slider-btn rounded-buttons">
+                                        <li><a class="main-btn rounded-one" href="https://discord.gg/6AatCrwQeR">Discord</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="slider-image-box d-none d-lg-flex align-items-end">
+                    </div> 
+                </div> 
+            </div>
+        </div>
+    </section>
+    <section class="features-area">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-10">
+                    <div class="section-title text-center pb-10">
+                        <h3 class="title">What we're doing</h3>
+                        <p class="text">Stop and take a look at what we're doing for you!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-7 col-sm-9">
+                    <div class="single-features mt-40">
+                        <div class="features-title-icon d-flex justify-content-between">
+                            <h4 class="features-title"><a href="#">Share with the world!</a></h4>
+                            <div class="features-icon">
+                                <img class="shape" src="{{ url_for('static',filename='assets/images/f-shape-1.svg') }}" alt="Shape"> 
+                            </div>
+                        </div>
+                        <div class="features-content">
+                            <p class="text">We're giving you a place to share your clips, funny moments, memes or even life events with the world!<br><br><br><br><br><br></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-7 col-sm-9">
+                    <div class="single-features mt-40">
+                        <div class="features-title-icon d-flex justify-content-between">
+                            <h4 class="features-title"><a href="#">Funny moments!</a></h4>
+                            <div class="features-icon">
+                                <img class="shape" src="{{ url_for('static',filename='assets/images/f-shape-1.svg') }}" alt="Shape"> 
+                            </div>
+                        </div>
+                        <div class="features-content">
+                            <p class="text">Whether you <a>post</a> or <a>watch</a>, we're always finding ways to share our favourite clips with you!<br><br><br><br><br></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-7 col-sm-9">
+                    <div class="single-features mt-40">
+                        <div class="features-title-icon d-flex justify-content-between">
+                            <h4 class="features-title"><a href="#">Support</a></h4>
+                            <div class="features-icon">
+                                <img class="shape" src="{{ url_for('static',filename='assets/images/f-shape-1.svg') }}" alt="Shape"> 
+                            </div>
+                        </div>
+                        <div class="features-content">
+                            <p class="text">Not only are we allowing you to share with the world, we're also providing support. Something wrong with one of the clips? Contact us via <a>Discord</a>!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+    <section id="sendclip" class=".send-clips">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-xl-5 col-lg-6">
+                    <div class="testimonial-left-content mt-45">
+                        <h4 class="title">Send us a clip!</h4>
+                        <p class="text">This clip will be removed after a total of <span>3</span> days. This is so we can save space on storage.<br>We're accepting only .mp4's and videos with a smaller file size then 6mb.</p> <br>
+
+                        
+                        <form method="post" action="/8364687d095e" enctype="multipart/form-data" accept-charset=".mp4">
+                            <div class="input-items default">
+                                <div class="file-input">
+                                    <input type="file" name="image" id="file" class="file">
+                                    <label for="file">Choose Video</label>
+                                    <br>
+                                    <input class="btn-submit-local" type="submit" value="Submit Video">
+                                </div><br><br>
+                                
+                            </div>
+                        </form>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="pricing-area ">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-10">
+                    <div class="section-title text-center pb-25">
+                        <h3 class="title">Pricing</h3>
+                        <p class="text">Try one of our services!<br> (You're also supporting us when you purchase one!)</p>
+                        <small>We're currently not allowing transactions. Sorry!</small>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">              
+                <div class="col-lg-4 col-md-7 col-sm-9">
+                    <div class="pricing-style mt-30">
+                        <div class="pricing-icon text-center">
+                            
+                        </div>
+                        <div class="pricing-header text-center">
+                            <h5 class="sub-title">API access</h5>
+                            <p class="month"><span class="price">$25</span></p><br><br>
+                        </div>
+                        <div class="pricing-list">
+                            <ul>
+                                <li>- Easy API access</li>
+                                <br>
+                            </ul>
+                        </div>
+                        <div class="pricing-btn rounded-buttons text-center">
+                            <a class="main-btn rounded-one" href="#">Purchase</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-7 col-sm-9">
+                    <div class="pricing-style mt-30">
+                        <div class="pricing-icon text-center">
+                            
+                        </div>
+                        <div class="pricing-header text-center">
+                            <h5 class="sub-title">Dedicated Server</h5>
+                            <p class="month"><span class="price">$60</span></p><br><br><br>
+                        </div>
+                        <div class="pricing-list">
+                            <ul>
+                                <li>- Dedicated Server</li>
+                                <li>- Default Setup</li>
+                            </ul>
+                        </div>
+                        <div class="pricing-btn rounded-buttons text-center">
+                            <a class="main-btn rounded-one" href="#">Purchase</a>
+                        </div>    
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-7 col-sm-9">
+                    <div class="pricing-style mt-30">
+                        <div class="pricing-icon text-center">
+                            
+                        </div>
+                        <div class="pricing-header text-center">
+                            <h5 class="sub-title">Donate</h5>
+                            <p class="month"><span class="price">$25</p><br><br>
+                        </div>
+                        <div class="pricing-list">
+                            <ul>
+                                <br><br>
+                            </ul>
+                        </div>
+                        <div class="pricing-btn rounded-buttons text-center">
+                            <a class="main-btn rounded-one" href="#">Donate</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="about" class="about-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="faq-content mt-45">
+                        <div class="about-title">
+                            <h4 class="title">FAQ for our services</h4><br>
+                        </div> 
+                        <div class="about-accordion">
+                            <div class="accordion" id="accordionExample">
+                                <div class="card">
+                                    <div class="card-header" id="headingOne">
+                                        <a href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">How does this work?</a>
+                                    </div>
+                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <p class="text">Essentially, you submit a clip, our AI check it for offensive content, copyrighted content, etc and if there is none, it will post on the channel!</p>
+                                        </div>
+                                    </div> 
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingTwo">
+                                        <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">What difference does it make if I buy a server or not?</a>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <p class="text">The way our bot (better said, ai) works is that it compiles clips from many different people. Which means there is a chance your clip isn't seen. People also buy the server so that they can upload videos that use only their clips. (this doesn't affect the videos that use shared clips and how they upload.)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingThree">
+                                        <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Why does the 'dedicated server' option cost so much?</a>
+                                    </div>
+                                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <p class="text">Our service (admittedly) work on raspberry pis. <b>More specifically the Raspberry PI 4.</b><br>These are pretty costly at a pricing of almost $50 in Canadian Dollar. (We are a canadian service, yes.)<br>The reason why we ask at a price of $60 is a chance to support the people behind setting up the servers. Really, you're paying $50 for the server and $10 for a setup fee.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingFore">
+                                        <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapseFore" aria-expanded="false" aria-controls="collapseFore">API Access?! What's that?</a>
+                                    </div>
+                                    <div id="collapseFore" class="collapse" aria-labelledby="headingFore" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <p class="text">We're working hard to provide a way for you to integrate our service in your projects. It's as easy as 1, 2, 3!<br>You make a reference to our service and provide a few arguments and that's it! More on that in our <a><b>Docs</b></a>.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                </div>
+            </div>
+        </div>
+    </section>
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+    <section class="footer-area footer-dark">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="footer-logo text-center">
+                        <a class="mt-30" href="index.html"><h3>Sweeple.ai</h3></a>
+                    </div>
+                    <div class="footer-support text-center">
+                        <span class="number">visit Sweeple on Youtube</span><br>
+                        <small>Made with <span style="color: rgb(255, 113, 113);">❤</span> by Daniels (Sweeple)</small>
+                        <span class="mail"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <a href="#" class="back-to-top"><i class="lni lni-chevron-up"></i></a>
+    <script src="{{ url_for('static',filename='assets/js/vendor/jquery-1.12.4.min.js') }}"></script> 
+    <script src="{{ url_for('static',filename='assets/js/vendor/modernizr-3.7.1.min.js') }}"></script> 
+    <script src="{{ url_for('static',filename='assets/js/popper.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='assets/js/bootstrap.min.js') }}"></script> 
+    <script src="{{ url_for('static',filename='assets/js/slick.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='assets/js/jquery.magnific-popup.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='assets/js/ajax-contact.js') }}"></script> 
+    <script src="{{ url_for('static',filename='assets/js/imagesloaded.pkgd.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='assets/js/isotope.pkgd.min.js') }}"></script> 
+    <script src="{{ url_for('static',filename='assets/js/jquery.easing.min.js') }}"></script> 
+    <script src="{{ url_for('static',filename='assets/js/scrolling-nav.js') }}"></script> 
+    <script src="{{ url_for('static',filename='assets/js/main.js') }}"></script> 
+    
+</body>
+
+</html>
